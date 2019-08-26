@@ -116,6 +116,15 @@
         </default>
     </switch>
     <!-- U+0445: "х" CYRILLIC SMALL LETTER HA -->
-    <Key
-        latin:keySpec="&#x0445;" />
+    <switch>
+        <case latin:languageCode="uk">
+            <Key
+                latin:keySpec="&#x0445;"
+                latin:keyHintLabel="&#x0457;"
+                latin:additionalMoreKeys="&#x0457;" />
+        </case>
+        <default>
+            <Key latin:keySpec="&#x0445;" />
+        </default>
+    </switch>
 </merge>
