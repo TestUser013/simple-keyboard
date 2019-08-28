@@ -53,6 +53,8 @@ public final class KeyboardCodesSet {
         "key_left",
         "key_right",
         "key_unspecified",
+        "key_move_left",
+        "key_move_right",
     };
 
     private static final int[] DEFAULT = {
@@ -70,7 +72,11 @@ public final class KeyboardCodesSet {
         Constants.CODE_ACTION_PREVIOUS,
         Constants.CODE_SHIFT_ENTER,
         Constants.CODE_LANGUAGE_SWITCH,
+        Constants.CODE_LEFT,
+        Constants.CODE_RIGHT,
         Constants.CODE_UNSPECIFIED,
+        Constants.CODE_MOVE_LEFT,
+        Constants.CODE_MOVE_RIGHT,
     };
 
     static {

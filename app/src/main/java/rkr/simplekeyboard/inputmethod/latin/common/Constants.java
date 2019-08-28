@@ -173,8 +173,12 @@ public final class Constants {
     public static final int CODE_LANGUAGE_SWITCH = -10;
     public static final int CODE_SHIFT_ENTER = -11;
     public static final int CODE_SYMBOL_SHIFT = -12;
+    public static final int CODE_LEFT = -13;
+    public static final int CODE_RIGHT = -14;
     // Code value representing the code is not specified.
-    public static final int CODE_UNSPECIFIED = -13;
+    public static final int CODE_UNSPECIFIED = -15;
+    public static final int CODE_MOVE_LEFT = -16;
+    public static final int CODE_MOVE_RIGHT = -17;
 
     public static boolean isLetterCode(final int code) {
         return code >= CODE_SPACE;
@@ -197,6 +201,8 @@ public final class Constants {
         case CODE_TAB: return "tab";
         case CODE_ENTER: return "enter";
         case CODE_SPACE: return "space";
+        case CODE_MOVE_LEFT: return "key_move_left";
+        case CODE_MOVE_RIGHT: return "key_move_right";
         default:
             if (code < CODE_SPACE) return String.format("\\u%02X", code);
             if (code < 0x100) return String.format("%c", code);

@@ -225,6 +225,12 @@ public final class InputLogic {
                 // Shift + Enter is treated as a functional key but it results in adding a new
                 // line, so that does affect the contents of the editor.
                 break;
+            case Constants.CODE_MOVE_LEFT:
+                handleMoveKey(-1);
+                break;
+            case Constants.CODE_MOVE_RIGHT:
+                handleMoveKey(1);
+                break;
             default:
                 throw new RuntimeException("Unknown key code : " + event.mKeyCode);
         }
@@ -375,6 +381,10 @@ public final class InputLogic {
                 mConnection.deleteTextBeforeCursor(lengthToDelete);
             }
         }
+    }
+
+    private void handleMoveKey(final int step) {
+        mLatinIME.onMovePointer(step);
     }
 
     /**
