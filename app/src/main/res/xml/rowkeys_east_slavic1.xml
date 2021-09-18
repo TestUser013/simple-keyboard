@@ -83,8 +83,8 @@
             <!-- U+0445: "х" CYRILLIC SMALL LETTER HA -->
             <Key
                 latin:keySpec="&#x0445;"
-                latin:keyHintLabel="`"
-                latin:additionalMoreKeys="`" />
+                latin:keyHintLabel="&#x0457;"
+                latin:additionalMoreKeys="&#x0457;" />
         </case>
         <case latin:showNumberRow="true">
             <!-- U+0439: "й" CYRILLIC SMALL LETTER SHORT I -->
@@ -123,7 +123,9 @@
                 latin:keySpec="&#x0437;" />
             <!-- U+0445: "х" CYRILLIC SMALL LETTER HA -->
             <Key
-                latin:keySpec="&#x0445;" />
+                latin:keySpec="&#x0445;"
+                latin:keyHintLabel="&#x0457;"
+                latin:additionalMoreKeys="&#x0457;" />
         </case>
         <default>
             <!-- U+0439: "й" CYRILLIC SMALL LETTER SHORT I -->
@@ -182,7 +184,9 @@
                 latin:additionalMoreKeys="0" />
             <!-- U+0445: "х" CYRILLIC SMALL LETTER HA -->
             <Key
-                latin:keySpec="&#x0445;" />
+                latin:keySpec="&#x0445;"
+                latin:keyHintLabel="&#x0457;"
+                latin:additionalMoreKeys="&#x0457;" />
         </default>
     </switch>
 </merge>
