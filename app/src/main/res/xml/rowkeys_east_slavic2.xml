@@ -26,11 +26,21 @@
                 latin:keySpec="&#x0444;"
                 latin:keyHintLabel="\@"
                 latin:additionalMoreKeys="\\@" />
-            <Key
-                latin:keySpec="!text/keyspec_east_slavic_row2_2"
-                latin:keyHintLabel="#"
-                latin:additionalMoreKeys="#"
-                latin:moreKeys="!text/morekeys_east_slavic_row2_2" />
+            <switch>
+                <case latin:languageCode="uk">
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_2"
+                        latin:keyHintLabel="&#x044B;"
+                        latin:additionalMoreKeys="&#x044B;,&#x0451;" />
+                </case>
+                <default>
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_2"
+                        latin:keyHintLabel="#"
+                        latin:additionalMoreKeys="#"
+                        latin:moreKeys="!text/morekeys_east_slavic_row2_2" />
+                </default>
+            </switch>
             <!-- U+0432: "в" CYRILLIC SMALL LETTER VE -->
             <Key
                 latin:keySpec="&#x0432;"
@@ -73,19 +83,39 @@
                 latin:keySpec="&#x0436;"
                 latin:keyHintLabel="("
                 latin:additionalMoreKeys="(" />
-            <Key
-                latin:keySpec="!text/keyspec_east_slavic_row2_11"
-                latin:moreKeys="!text/morekeys_east_slavic_row2_11"
-                latin:keyHintLabel=")"
-                latin:additionalMoreKeys=")" />
+            <switch>
+                <case latin:languageCode="uk">
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_11"
+                        latin:moreKeys="!text/morekeys_east_slavic_row2_11"
+                        latin:keyHintLabel=")"
+                        latin:additionalMoreKeys="),&#x044D;" />
+                </case>
+                <default>
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_11"
+                        latin:moreKeys="!text/morekeys_east_slavic_row2_11"
+                        latin:keyHintLabel=")"
+                        latin:additionalMoreKeys=")" />
+                </default>
+            </switch>
         </case>
         <default>
             <!-- U+0444: "ф" CYRILLIC SMALL LETTER EF -->
             <Key
                 latin:keySpec="&#x0444;" />
-            <Key
-                latin:keySpec="!text/keyspec_east_slavic_row2_2"
-                latin:moreKeys="!text/morekeys_east_slavic_row2_2" />
+            <switch>
+                <case latin:languageCode="uk">
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_2"
+                        latin:moreKeys="&#x044B;,&#x0451;" />
+                </case>
+                <default>
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_2"
+                        latin:moreKeys="!text/morekeys_east_slavic_row2_2" />
+                </default>
+            </switch>
             <!-- U+0432: "в" CYRILLIC SMALL LETTER VE -->
             <Key
                 latin:keySpec="&#x0432;" />
@@ -112,9 +142,20 @@
             <!-- U+0436: "ж" CYRILLIC SMALL LETTER ZHE -->
             <Key
                 latin:keySpec="&#x0436;" />
-            <Key
-                latin:keySpec="!text/keyspec_east_slavic_row2_11"
-                latin:moreKeys="!text/morekeys_east_slavic_row2_11" />
+            <switch>
+                <case latin:languageCode="uk">
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_11"
+                        latin:moreKeys="!text/morekeys_east_slavic_row2_11"
+                        latin:keyHintLabel=")"
+                        latin:additionalMoreKeys="),&#x044D;" />
+                </case>
+                <default>
+                    <Key
+                        latin:keySpec="!text/keyspec_east_slavic_row2_11"
+                        latin:moreKeys="!text/morekeys_east_slavic_row2_11" />
+                </default>
+            </switch>
         </default>
     </switch>
 </merge>

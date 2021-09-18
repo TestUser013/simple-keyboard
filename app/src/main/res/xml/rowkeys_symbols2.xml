@@ -41,6 +41,8 @@
                 latin:keySpec="\@" />
             <Key
                 latin:keySpec="\#" />
+            <Key
+                latin:keySpec="&#x2116;" />
         </default>
     </switch>
     <Key
